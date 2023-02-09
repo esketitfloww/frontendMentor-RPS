@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-bar">
+        <img src="images/logo.svg" alt="logo">
+        <div class="score-board">
+          <p class="score-title">SCORE</p>
+          <p class="score-result">0</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="container">
+    <div id="home-content">
+      <div class="triangle">
+        <img id="triangle-img" src="images/bg-triangle.svg" alt="triangle">
+      </div>
+      <div class="paper-scissor">
+        <div class="paper-choice">
+          <img src="images/icon-paper.svg" alt="paper">
+        </div>
+        <div class="scissor-choice">
+          <img src="images/icon-scissors.svg" alt="scissor">
+        </div>
+      </div>
+      <div class="rock-choice">
+        <img src="images/icon-rock.svg" alt="rock">
+      </div>
+    </div>
+
+    <div id="result">
+      <div class="choices">
+        <div class="user-input">
+          <div class="user-choice">
+            <img id="image-choice" src="" alt="user">
+          </div>
+          <p class="choice-text"> YOU PICKED </p>
+        </div>
+
+        <div class="computer-input">
+          <div class="computer-choice">
+            <img id="computer-image" src="images/icon-scissors.svg" alt="computer" width="30vw" height="20vh">
+          </div>
+          <p class="choice-text"> THE HOUSE PICKED </p>
+        </div>
+      </div>
+
+      <div class="result-title">
+        <p class="result-text">YOU WIN</p>
+        <button id="again">PLAY AGAIN</button>
+      </div>          
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">esketitfloww</a>.
+  </div>
+</body>
+</html>
